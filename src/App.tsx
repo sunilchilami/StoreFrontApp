@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import StoreItemList from "./components/StoreItemsList";
 import { StoreItemsModel } from "../src/models/Interfaces/StoreData";

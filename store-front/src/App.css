@@ -1,0 +1,22 @@
+.App {
+  /* text-align: center; */
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.backBtn {
+  margin: 20px;
+  background-color: gainsboro;
+  border: none;
+  display: flex;
+  width: 150px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-message {
+  color: red;
+}

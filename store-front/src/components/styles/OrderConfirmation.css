@@ -1,0 +1,27 @@
+.order-confirmation {
+  max-width: 500px;
+  margin: auto;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.headerBorder{
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+}
+
+.item-summary {
+  display: flex;
+}
+
+.order-confirmation .item-summary img {
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+}
+
+.order-confirmation .customer-info {
+  margin-bottom: 20px;
+}

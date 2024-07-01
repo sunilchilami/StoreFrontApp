@@ -1,0 +1,65 @@
+.checkout-form {
+  max-width: 500px;
+  margin: auto;
+}
+
+.checkout-form .item-summery {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.checkout-form .item-summery img {
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+}
+
+.checkout-form .form-group {
+  margin-bottom: 15px;
+}
+
+.checkout-form .form-group {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.checkout-form .form-group input {
+  width: 100%;
+  border-radius: 5px;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  width: 100%;
+  border-radius: 5px;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.checkout-form button {
+  padding: 10px 15px;
+  background-color: lightgreen;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.checkout-form button:hover {
+  background-color: green;
+}
+
+label {
+  display: flex;
+}
+
+button {
+  margin: 20px;
+  border-radius: 3px;
+}

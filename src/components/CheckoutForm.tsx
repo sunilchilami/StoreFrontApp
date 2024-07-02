@@ -52,13 +52,6 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({
       isValid = false;
     }
 
-    for (const key in formData) {
-      if (formData[key as keyof typeof formData].trim() === "") {
-        errors[key as keyof typeof formData] = "This field is required";
-        isValid = false;
-      }
-    }
-
     setFormErrors(errors);
     return isValid;
   };

@@ -81,7 +81,7 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({
     if (validateForm()) {
       onSubmit({
         item,
-        customerInfo: { ...formData, phoneNumber: phoneNumber },
+        customerInfo: { ...formData },
       });
     }
   };

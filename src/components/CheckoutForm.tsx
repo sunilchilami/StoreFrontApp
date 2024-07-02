@@ -32,11 +32,11 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({
     if (!formData.fullName) errors.fullName = "Full Name is required";
     if (!formData.email) errors.email = "House Number is required";
     if (!formData.phone) errors.phone = "Phone Number is required";
-    if (!formData.creditCard) errors.phone_number = "creditCard is required";
-    if (!formData.address) errors.state = "Address is required";
+    if (!formData.creditCard) errors.creditCard = "Credit Card is required";
+    if (!formData.address) errors.address = "Address is required";
 
     if (!formData.fullName.match(/^[A-Za-z\s]+$/)) {
-      errors.fullName = "Full Name contains only alphabetical characters";
+      errors.fullName = "Full Name must be only alphabetical characters";
       isValid = false;
     }
     if (!formData.email.match(/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/)) {
@@ -129,7 +129,7 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({
             maxLength={50}
           />
           {formErrors.fullName && (
-            <div className="error-message">{formErrors.fullName}</div>
+            <p className="error-message">{formErrors.fullName}</p>
           )}
         </div>
         <div className="form-group">
@@ -144,7 +144,7 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({
             maxLength={300}
           />
           {formErrors.address && (
-            <div className="error-message">{formErrors.address}</div>
+            <p className="error-message">{formErrors.address}</p>
           )}
         </div>
         <div className="form-group">
@@ -158,7 +158,7 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({
             required
           />
           {formErrors.email && (
-            <div className="error-message">{formErrors.email}</div>
+            <p className="error-message">{formErrors.email}</p>
           )}
         </div>
 
@@ -177,7 +177,7 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({
             required
           />
           {formErrors.phone && (
-            <div className="error-message">{formErrors.phone}</div>
+            <p className="error-message">{formErrors.phone}</p>
           )}
         </div>
 
@@ -193,7 +193,7 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({
             required
           />
           {formErrors.creditCard && (
-            <div className="error-message">{formErrors.creditCard}</div>
+            <p className="error-message">{formErrors.creditCard}</p>
           )}
         </div>
         <div className="btnContainer">

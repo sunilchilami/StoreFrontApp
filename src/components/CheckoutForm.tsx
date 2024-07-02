@@ -100,10 +100,10 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({
         onSubmit={handleSubmit}
         onReset={resetForm}
       >
-        <h2>Checkout Form</h2>
-        <hr />
+        <h2 style={{ borderBottom: "1px solid" }}>Checkout Form</h2>
+
         <div className="item-summery">
-          <img src={item.imageUrl} alt={item.name} />
+          <img src={item.imageUrl} alt={item.name} height={120} width={150} />
           <div>
             <h3>{item.name}</h3>
             <p>{item.description}</p>

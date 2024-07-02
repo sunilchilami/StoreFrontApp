@@ -1,12 +1,14 @@
 .checkout-form {
   max-width: 500px;
   margin: auto;
+  position: fixed;
+  left: 40%;
 }
 
 .checkout-form .item-summery {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .checkout-form .item-summery img {
@@ -16,7 +18,7 @@
 }
 
 .checkout-form .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .checkout-form .form-group {
@@ -60,6 +62,6 @@ label {
 }
 
 button {
-  margin: 20px;
+  margin: 10px;
   border-radius: 3px;
 }
